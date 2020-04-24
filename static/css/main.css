@@ -1,0 +1,74 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://www.jeffbullas.com/wp-content/uploads/2019/12/25-Ways-Artificial-Intelligence-is-Helping-eCommerce-Marketers.jpg");
+    background-size: cover;
+}
+
+body#dashboard-outer {
+    
+}
+    body#promotion-outer {
+        background-image: url("https://www.jeffbullas.com/wp-content/uploads/2019/12/25-Ways-Artificial-Intelligence-is-Helping-eCommerce-Marketers.jpg");
+        background-size: cover;
+    }
+body#insights-outer {
+    
+}
+
+.card {
+    background: #e3fdfd9e;
+}
+
+.header{
+    padding: 5px;
+    height: 50px;
+    background: white;
+    box-shadow: 2px 4px 5px #8080802e;
+}
+.website-title {
+    line-height: 35px;
+    width:20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #71c9ce;
+    margin:auto;
+}
+.outer-body{
+    margin-top:100px;
+}
+
+.card {
+    border: 2px solid #e3fdfd;
+}
+
+.user-input > input {
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+.user-input > span {
+    margin: auto;
+
+}
+
+.btn-primary {
+    background-color: #5cd7de;
+    border-color: #5cd7de;
+}
+
+.pred-label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav {
+    background: white;;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+}
+footer i {
+    margin-right: 5px;
+}

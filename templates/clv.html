@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <title>Promotions</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1 align="center">Customer Complaints(CLV)</h1>
+    </div>
+    <div class='container outer-body'>
+        <div class='row'>
+            <div class='col-md-6 offset-3'>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="user-input">
+
+                            <form action="{{ url_for('process')}}" method="POST">
+                                <span>Enter Customers ID:</span>
+                                <textarea name="userid" rows="1" cols="65" class="form-control"></textarea>
+
+                                
+                                    <input type="checkbox" name="vehicle1" value="Bike">
+                                    <label for="vehicle1"> I have a bike</label><br>
+                                    <input type="checkbox" name="vehicle2" value="Car">
+                                    <label for="vehicle2"> I have a car</label><br>
+                                    <input type="checkbox" name="vehicle3" value="Boat" checked>
+                                    <label for="vehicle3"> I have a boat</label><br><br>
+                                    <input type="submit" value="Submit">
+                                
+                                <span>Price:</span>
+                                <textarea name="price" rows="1" cols="65" class="form-control"></textarea>
+                                <input type="submit" class="btn-info" value="Add to Cart">
+                                <br>
+                                <span id="result">{{ prediction_text }}</span>
+                            </form>
+
+
+                        </div>
+                        <hr>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
